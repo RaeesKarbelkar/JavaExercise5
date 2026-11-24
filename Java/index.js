@@ -1,5 +1,5 @@
 // TODO: Create an array called numbers with values 1 through 5 
-let numbers = ["1","2","3","4","5"]
+let numbers = [1,2,3,4,5]
 // TODO: Write a for loop that prints each number in the array 
 for ( let num1 of numbers){
 console.log(num1);
@@ -17,8 +17,11 @@ for (let numEven of numbers){
   }
 }
 // TODO: Create a loop that calculates the sum of all numbers in the array
-sum = 0
-while (sum < numbers.length) {
-  sum = numbers.length + numbers.length
-  console.log(sum);
+let i = 0;
+let sum =0;
+
+while (i <numbers.length) {
+ sum = sum + numbers[i];
+ i++;
 }
+console.log(sum);
